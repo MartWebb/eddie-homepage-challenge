@@ -9,25 +9,25 @@
 
 :root {
     --clr-dark: #4E5150; 
-    --clr-gray: #BDBDBD; /* keep*/
-    --clr-white: #FFF; /* keep*/
-    --clr-gray-1: #333333; /* keep*/
-    --clr-gray-2: #4F4F4F; /* keep*/
-    --clr-gray-3: #828282; /* keep*/
-    --clr-gray-4: #F2F2F2; /* keep*/
-    --clr-gray-5: #E0E0E0;  /* keep*/
-    --clr-blue: #2D9CDB; /* keep*/
-    --clr-green: #27AE60; /* keep*/
-    --clr-red: #EB5757; /* keep*/
-    --clr-purple: #100E1D; /* keep*/
+    --clr-gray: #BDBDBD; 
+    --clr-white: #FFF; 
+    --clr-gray-1: #333333; 
+    --clr-gray-2: #4F4F4F; 
+    --clr-gray-3: #828282; 
+    --clr-gray-4: #F2F2F2; 
+    --clr-gray-5: #E0E0E0;  
+    --clr-blue: #2D9CDB; 
+    --clr-green: #27AE60; 
+    --clr-red: #EB5757; 
+    --clr-purple: #100E1D; 
     
     --font-10: 500 0.625rem/0.938rem 'Poppins', sans-serif;
     --font-12: 500 0.75rem/1.125rem 'Poppins', sans-serif;
     --font-type-2-12: 400 0.75rem/1.125rem 'Poppins', sans-serif;
     --font-type-3-12: 300 0.75rem/1.125rem 'Poppins', sans-serif;
-    --font-type-3-14: 300 0.875rem/1.313rem 'Poppins', sans-serif; /* keep*/
-    --font-type-2-14: 500 0.875rem/1.313rem 'Poppins', sans-serif; /* keep*/
-    --font-14: 600 0.875rem/1.15rem 'Montserrat', sans-serif; /* keep*/
+    --font-type-3-14: 300 0.875rem/1.313rem 'Poppins', sans-serif; 
+    --font-type-2-14: 500 0.875rem/1.313rem 'Poppins', sans-serif; 
+    --font-14: 600 0.875rem/1.15rem 'Montserrat', sans-serif; 
     --font-16: 400 1rem/1.5rem 'Poppins', sans-serif;
     --font-type-2-16: 500 1rem/1.5rem 'Poppins', sans-serif;
     --font-type-2-18: 400 1.125rem/1.688rem 'Poppins', sans-serif;
@@ -76,6 +76,20 @@ header {
 .main-nav-controls {
     display: none;
     text-decoration: none;
+}
+
+.main-nav .open:hover {
+    box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.4);
+    cursor: pointer;
+    background-color: var(--clr-blue);
+    padding: .2em;
+}
+
+.main-nav-link:hover,
+.footer-nav-a:hover,
+.main-nav-link:focus,
+.footer-nav-a:focus {
+    color: var(--clr-blue);
 }
 
 /* Hero */
@@ -145,6 +159,13 @@ header {
     padding: .6em 1.2em;
     border-radius: .7em;
     color: var(--clr-gray-4);
+    cursor: pointer;
+}
+
+.email-btn:hover,
+.email-btn:focus {
+    color: var(--clr-gray-3);
+    background-color: var(--clr-gray-5);
 }
 
 /* Services */
@@ -203,9 +224,11 @@ header {
     border: 1px solid var(--clr-gray-5);
     border-radius: .6em;
     box-shadow: 0px 10px 30px rgba(51, 51, 51, .3);
+    cursor: pointer;
 }
 
-.dark-color {
+.card-button:hover,
+.card-button:focus  {
     background-color: var(--clr-blue);
     color: var(--clr-white);
 }
@@ -245,6 +268,11 @@ header {
 .more-work-span {
     color: var(--clr-blue);
     text-decoration: none;
+}
+
+.more-work-a:hover,
+.more-work-a:focus {
+    color: var(--clr-gray);
 }
 
 .more-work .more-work-span {
@@ -362,6 +390,10 @@ header {
     cursor: pointer;
 }
 
+.hamburger-nav .close:hover {
+    color: var(--clr-blue);
+}
+
 .hamburger-nav ul {
     height: 100%;
     display: -webkit-box;
@@ -416,14 +448,14 @@ footer .logo {
 
 .footer-link {
     font: var(--font-14);
-    color: var(--clr-gray);
+    color: var(--clr-gray-4);
     text-decoration: none;
     cursor: pointer;
 }
 
 .footer-link:focus,
 .footer-link:hover {
-    color: var(--clr-dark);
+    color: var(--clr-blue);
 }
 
 /* Footer nav */
@@ -463,7 +495,11 @@ footer .logo {
     margin-left: 4em;
 }
 
-/* MMed Screen sizes */
+.social-media {
+    margin: 0 .1em;
+}
+
+/* Med Screen sizes */
 @media (min-width: 592px) {
     
     /* Services */
@@ -472,9 +508,7 @@ footer .logo {
     }
 
     /* Our Work */
-    /* #our-works {
-        border: green 1px solid;
-    } */
+
     .our-works-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -524,6 +558,12 @@ footer .logo {
         font: var(--font-2-36);
     }
 
+    /* Nav */
+
+    .main-nav .open {
+        display: none;
+    }
+
     /* Hero */
     .hero-question {
         color: var(--clr-blue);
@@ -567,9 +607,6 @@ footer .logo {
     .services-title {
         font: var(--font-36);
         
-    }
-    .main-nav .open {
-        display: none;
     }
 
     /* Work */
