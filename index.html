@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Poppins:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+
+        <!-- Material Icons -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+        <title>Eddie Homepage</title>
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="main-container">
+                <header id="home">
+                    <div>
+                        <h1 class="logo">Edie</h1>
+                    </div>
+                
+                    <nav class="main-nav">
+                        <ul class="main-nav-controls">
+                            <li><a class="main-nav-link" href="#home">Home</a></li>
+                            <li><a class="main-nav-link" href="#services">Sevices</a></li>
+                            <li><a class="main-nav-link" href="#our-works">Our works</a></li>
+                            <li><a class="main-nav-link" href="#clients">Clients</a></li>
+                            <li><a class="main-nav-link" href="#contact">Contact</a></li>
+                        </ul>
+                        <div class="hambuger">
+                            <span class="open material-icons">menu</span>
+                            
+                        </div>
+                    </nav>
+                </header>
+            
+                <section class="about-us">
+                    <div class="position-width">
+                        <p class="hero-question">Unhappy with your website?</p>
+                        <p class="hero-info">We create beautiful and fast web services</p>
+                    </div>
+                    
+                    <div class="hero">
+                        <img class="hero-image" src="images/heroImage.jpg" alt="">
+                    </div>
+                    <div class="position-width">
+                        <p class="hero-info-two">Story, emotion and purpose</p>
+                        <p class="hero-info-three">We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time.</p>
+                        <form class="form" onsubmit="alert('submit!');return false">
+                            <label class="hero-input-label" for="email">Want us to contact you?</label>
+                            <div class="hero-input-container">
+                                <input type="email" name="email" id="email" placeholder="Email">
+                                <button class="email-btn" type="submit">Join</button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+
+                <section id="services" >
+                    <div class="services-title-container position-width">
+                        <p class="services-title">We offer high demand services</p>
+                    </div>
+                    
+                    <div class="cards">
+                        <div class="card-border">
+                            <div class="card position-width">
+                                <span class="services-icon material-icons">create</span>
+                                <h4>UI/UX Design</h4>
+                                <p class="card-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+                                <button class="card-button">Get Started</button>
+                            </div>
+                        </div>
+                        <div class="card-border">
+                            <div class="card position-width">
+                                <span class="services-icon code material-icons">code</span>
+                                <h4>Front End</h4>
+                                <p class="card-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+                                <button class="card-button dark-color">Get Started</button>
+                            </div>
+                        </div>
+                        <div class="card-border">
+                            <div class="card position-width">
+                                <span class="services-icon storage material-icons">storage</span>
+                                <h4>Back End</h4>
+                                <p class="card-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+                                <button class="card-button">Get Started</button>
+                            </div>
+                        </div>
+                    </div> <!-- cards -->
+                </section>
+
+                <section id="our-works">
+                    <p class="position-width work-title">Good design means good business</p>
+                    <div class="our-works-container">
+                        <div class="work work-one">
+                            <img class="work-image" src="images/smarthome.jpg" alt="booking system">
+                            <p class="work-type">Full stack application</p>
+                            <h5 class="work-name">Smart home dashboard</h5>
+                        </div>
+                        <div class="work work-two">
+                            <img class="work-image" src="images/onboard.png" alt="">
+                            <p class="work-type">UX/UI design</p>
+                            <h5 class="work-name">Onboard application</h5>
+                        </div>
+                        <div class="work work-three">
+                            <img class="work-image" src="images/booking.png" alt="booking system">
+                            <p class="work-type">Mobile application</p>
+                            <h5 class="work-name">Booking system</h5>
+                        </div>
+                        <div class="work work-four">
+                            <img class="work-image" src="images/juice-product.png" alt="">
+                            <p class="work-type">Front End application</p>
+                            <h5 class="work-name">Juice product homepage</h5>
+                        </div>
+                        <div class="more-work">
+                            <a class="more-work-a" href="javascript:void(0)" >See more<span class="more-work-span material-icons">arrow_right_alt</span></a>
+                        </div>
+                    </div> <!-- our-works-container -->
+                </section>
+
+                <section id="our-team">
+                    <div class="team-info">
+                        <p class="our-team-title">Meet the team</p>
+                        <p class="our-team-description">We are chilled and a laidback team</p>
+                        <p class="our-team-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="team-images">
+                        <div class="team-image-one">
+                            <img class="team-image" src="images/person1.png" alt="Male with scarf and coat">
+                        </div>
+                        <div class="team-image-two">
+                            <img class="team-image" src="images/person2.png" alt="smiling male wearing glasses">
+                        </div>
+                        <div class="team-image-three">
+                            <img class="team-image" src="images/person3.png" alt="smiling female carrying a rucksack">
+                        </div>
+                    </div>
+                </section>
+
+                <section id="clients">
+                    <h2 class="clients-title">“Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”</h2>
+                    <div class="client-container">
+                        <div class="client-image-container">
+                            <img class="client-image" src="images/person4.png" alt="smiling man in shirt and tie">
+                        </div>
+                        
+                        <div class="client-info-container">
+                            <h2 class="client-name">Carlos Tran</h2>
+                            <p class="client-project">The Decorate Gatsby</p>
+                        </div>
+                    </div>
+                </section>
+            </div> <!-- main-container -->
+
+            <footer id="contact">
+                <div class="main-footer-container">
+                    <nav class="footer-nav">
+                        <span class="close material-icons">close</span>
+                        <ul class="footer-nav-list">
+                            <li><a class="footer-nav-a hamburger-link" href="#home">Home</a></li>
+                            <li><a class="footer-nav-a hamburger-link" href="#services">Sevices</a></li>
+                            <li><a class="footer-nav-a hamburger-link" href="#our-works">Our works</a></li>
+                            <li><a class="footer-nav-a hamburger-link" href="#clients">Clients</a></li>
+                            <li><a class="footer-nav-a hamburger-link" href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="media-container">
+                        <h2 class="logo">Edie</h2>
+                        <a class="social-media" href="https://www.instagram.com/"><img src="images/instagram.svg" alt="instagram logo"></a>
+                        <a class="social-media" href="https://www.linkedin.com/"><img src="images/linkedin.svg" alt="linkedin logo"></a>
+                        <a class="social-media" href="https://twitter.com/?lang=en"><img src="images/twitter.svg" alt="twitter logo"></a>
+                    </div>
+                    <form class="footer-form" onsubmit="alert('submit!');return false">
+                        <label class="footer-label" for="footer-email">Want us to contact you?</label>
+                        <div class="footer-input-container">
+                            <input class="footer-email" type="email" name="email" id="footer-email" placeholder="Email">
+                            <button class="email-btn" type="submit">Join</button>
+                        </div>
+                    </form>
+                </div> <!-- main-footer-container -->
+                <div class="footer">
+                    <a class="footer-link" href="https://devchallenges.io/"><p>Martin Webb @DevChallenges.io</p></a>
+                </div>
+            </footer>
+        </div> <!-- container -->
+        <script src="index.js"></script>
+    </body>
+</html>
