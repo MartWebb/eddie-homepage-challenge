@@ -39,6 +39,10 @@
     --font-2-24: 800 1.5rem/2.203rem 'Heebo', sans-serif;
     --font-2-36: 800 2.25rem/3.305rem 'Heebo', sans-serif;
 }
+
+html {
+    scroll-behavior: smooth;
+}
   
 body {
     font-family: 'Poppins', sans-serif;
@@ -68,7 +72,7 @@ header {
     margin: 1.5em 0;
 }
 .logo {
-    color: var(--clr-gray-1);
+    /* color: var(--clr-gray-1); */
     font: var(--font-2-24)
 }
 
@@ -304,8 +308,8 @@ header {
 
 .team-images {
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto 10px;
-    grid-template-rows: repeat(6, minmax(40px, auto));
+    grid-template-columns: auto auto auto auto auto auto auto auto auto 0.625em;
+    grid-template-rows: repeat(6, minmax(2.5em, auto));
     gap: 1em;
     width: 100%;
     height: min-content;
@@ -328,8 +332,6 @@ header {
 }
 
 .team-image-three {
-    grid-column: 1/2;
-    grid-row: 2/4;
     grid-column: 1 / 6;
     grid-row: 2 / 6;
 }
@@ -350,8 +352,7 @@ header {
 }
 
 .client-image-container {
-    width: 66px;
-    
+    width: 4.125em;
 }
 
 .client-image {
