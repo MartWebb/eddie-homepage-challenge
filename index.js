@@ -2,7 +2,9 @@ const footerNav = document.querySelector('.footer-nav');
 const openNav = document.querySelector('.open');
 const closeNav = document.querySelector('.close');
 const link = document.querySelectorAll('.hamburger-link');
-
+const home = document.querySelector("#home")
+console.log(home.offsetTop)
+console.log(window.pageYOffset)
 const navHandler = (action, amount, value) => {
     footerNav.style.marginLeft = amount;
     closeNav.style.display = value

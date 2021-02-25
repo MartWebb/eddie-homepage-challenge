@@ -64,6 +64,12 @@ body {
     margin-left: 5%;
 }
 
+.constant-position-width {
+    width: 90%;
+    max-width: 30em;
+    margin-left: 5%;
+}
+
 /* Header */
 
 header {
@@ -72,7 +78,6 @@ header {
     margin: 1.5em 0;
 }
 .logo {
-    /* color: var(--clr-gray-1); */
     font: var(--font-2-24)
 }
 
@@ -110,6 +115,7 @@ header {
 .hero-info {
     font: var(--font-24);
     width: 12em;
+    margin-bottom: .5em;
 }
 
 .hero-image {
@@ -135,16 +141,14 @@ header {
     color: var(--clr-gray-3);
 }
 
-.hero-input-container {
+.hero-input-container,
+.footer-input-container {
     background-color: var(--clr-gray-4);
     border-radius: .5em;
-    width: 17em;
-    padding: .4em;
-}
-
-.form {
+    padding: .4em .5em;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    max-width: 17em;
 }
 
 #email,
@@ -152,9 +156,7 @@ header {
     border: none;
     background-color: var(--clr-gray-4);
     color: var(--clr-gray);
-    margin-left: .5em;
-    margin-right: 2.7em;
-    height: 2em;
+    width:70%;
     font: var(--font-type-2-14);
 }
 
@@ -174,6 +176,7 @@ header {
 
 /* Services */
 
+
 #services {
     margin-top: 5em;
 }
@@ -187,16 +190,26 @@ header {
     font: var(--font-24);
 }
 
+.cards {
+    display: flex;
+    flex-direction: column;
+}
+
 .card-border {
     height: 24em;
     margin: .5em 0;
+    min-width: 17em;
+}
+
+.card {
+    margin: 0 1em ;
+    min-width: 15em;
 }
 
 .card-border:hover {
     box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
     border-radius: 24px;
     justify-content: center;
-    padding: 2em .3em;
 }
 
 .services-icon {
@@ -227,7 +240,7 @@ header {
     padding: .5em .8em;
     border: 1px solid var(--clr-gray-5);
     border-radius: .6em;
-    box-shadow: 0px 10px 30px rgba(51, 51, 51, .3);
+    box-shadow: 0px 10px 30px rgba(51, 51, 51, .2);
     cursor: pointer;
 }
 
@@ -238,6 +251,10 @@ header {
 }
 
 /* Work */
+
+#our-works {
+    margin-top: 2.5em
+}
 
 .work {
     max-width: 34em;
@@ -480,13 +497,6 @@ footer .logo {
     font: var(--font-type-2-18);
 }
 
-.footer-input-container {
-    background-color: var(--clr-gray-4);
-    border-radius: .5em;
-    width: 17em;
-    padding: .4em;
-}
-
 .footer-nav .close {
     display: none;
 }
@@ -503,12 +513,13 @@ footer .logo {
 /* Med Screen sizes */
 @media (min-width: 592px) {
     
-    /* Services */
-    .cards {
-        display: flex;
-    }
-
     /* Our Work */
+
+    .work-position {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 
     .our-works-container {
         display: grid;
@@ -549,7 +560,48 @@ footer .logo {
         align-self: flex-end;
         margin-right: 4em;
     }
+
+    /* Our Team */
+    .team-position {
+        max-width: 90%;
+        margin-left: 5%;
+    }
+
+    /* Client */
+    .client-position {
+        max-width: 90%;
+        margin-left: 5%;
+    }
 } 
+
+@media (min-width: 760px) {
+    .services-icon {
+        margin-top: 1em;
+        margin-bottom: .8em;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .card-border {
+        font: var(--font-12);
+        height: 24em;
+        margin: .5em 0;
+        min-width: 18em;
+    }
+    
+    .card {
+        margin: 0 1em ;
+        width: 16em;
+    }
+
+    .card-button {
+        font: var(--font-12);
+    }
+}
 
 @media (min-width: 992px) {
 
@@ -557,6 +609,11 @@ footer .logo {
     .logo {
         color: var(--clr-gray-1);
         font: var(--font-2-36);
+    }
+
+    .position-width {
+        max-width: 40em;
+        margin-left: 16%;
     }
 
     /* Nav */
@@ -577,21 +634,22 @@ footer .logo {
     }
     
     .hero-info {
-        font: var(--font-48);
+        font: var(--font-36);
         display: block;
         width: 12em;
     }
 
     .hero-info-two {
-        font: var(--font-48);
+        font: var(--font-36);
     }
 
     .hero-info-three {
-        font: var(--font-type-2-18);
+        font: var(--font-type-2-14);
+        max-width: 21em;
     }
 
     .hero-input-container {
-        width: 22em;
+        max-width: 25em;
         padding: .4em;
     }
 
@@ -600,6 +658,34 @@ footer .logo {
     }
 
     /* Services */
+
+    .services-icon {
+        font-size: var(--font-36);
+        margin-top: 2em;
+        margin-bottom: 1em;
+    }
+
+    .card-title {
+        font: var(--font-24);
+    }
+
+    .cards {
+        justify-content: space-evenly;
+    }
+
+    .card-border {
+        font: var(--font-type-2-16);
+        margin-right: 1em;
+        max-width: 10em;
+    }
+
+    .card {
+        min-width: 8em;
+    }
+
+    .card-button {
+        font: var(--font-16);
+    }
 
     .services-title-container {
         width: 25em;
@@ -611,9 +697,11 @@ footer .logo {
     }
 
     /* Work */
+
     .work {
         max-width: 30em;
     }
+
     .our-works-container {
         align-content: space-around;
     }
@@ -661,8 +749,9 @@ footer .logo {
     }
 
     .footer-input-container {
-        width: 19em;
-        padding: .4em;
+        border: 1px;
+        max-width: 30em;
+        padding: .4em 1em;
     }
 
     #email,
